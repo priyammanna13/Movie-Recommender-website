@@ -1,0 +1,28 @@
+.spin-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .wheel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffcc00;
+    background: conic-gradient(#ff5733 0deg 60deg, #33ff57 60deg 120deg, #3357ff 120deg 180deg, #ff33aa 180deg 240deg, #ffcc00 240deg 300deg, #33aaff 300deg 360deg);
+    transition: transform 3s ease-out;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  

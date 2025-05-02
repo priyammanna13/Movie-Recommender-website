@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Wheel Container */
+  .wheelContainer {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Spinning Wheel */
+  .wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid black;
+    position: relative;
+    transition: transform 5s ease-out;
+  }
+  
+  /* Individual Segments */
+  .segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%);
+    transform-origin: 50% 50%;
+  }
+  .text{
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    transform:  rotate(25deg); /* Adjust rotation */
+
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
+  /* Pointer at the top */
+  .pointer {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    position: absolute;
+    top:5px;
+    background-color: rgb(74, 9, 74);
+    width: 1em;
+    height: 1.5em;
+    z-index: 10;
+  }
+  
+  /* Spin Button */
+  .spinButton {
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+   
+  }
+  
+  .spinButton:hover {
+    background: #0056b3;
+  }
+  
+  /* Reward Display */
+  .reward {
+    position: relative;
+    margin-top: 25em;
+    font-size: 18px;
+    font-weight: bold;
+  }
