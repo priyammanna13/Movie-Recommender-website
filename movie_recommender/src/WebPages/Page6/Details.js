@@ -411,9 +411,9 @@ const Details = () => {
                     <div className={style.watchMovieSection}>
               <Watchmovie movieTitle={content.title} />
             </div>
-                    <button onClick={handleDeductToken}>
+                    {/* <button onClick={handleDeductToken}>
                         Watch Movie (10000 Token)
-                    </button>
+                    </button> */}
 
                     </div>
            
