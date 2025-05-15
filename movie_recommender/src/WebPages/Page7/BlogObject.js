@@ -101,6 +101,7 @@ const BlogObj=[
         link:'https://screenrant.com/oppenheimer-cillian-murphy-oscar-win-reflection/'
     },
 
+    
     {
         img: './images/Blade.jpg',
         title: 'Blade',
